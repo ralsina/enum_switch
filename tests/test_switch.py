@@ -9,9 +9,11 @@ class Color(Enum):
     GREEN = 2
     BLUE = 3
 
+
 class Animal(Enum):
     DOG = 1
     CAT = 2
+
 
 def test_no_default_missing_branch():
     class MySwitch(Switch):
@@ -73,6 +75,7 @@ def test_default_and_all_branches():
     assert s(Color.RED) == "Apple"
     assert s(Color.GREEN) == "Kiwi"
     assert s(Color.BLUE) == "Sky"
+
 
 def test_called_with_wrong_value():
     class MySwitch(Switch):

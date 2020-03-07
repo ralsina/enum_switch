@@ -11,7 +11,7 @@ class Switch:
 
     def __call__(self, value):
         if not isinstance(value, self.__enum):
-            raise ValueError(f'Invalid value: {value}')
+            raise ValueError(f"Invalid value: {value}")
         if hasattr(self, value.name):
             return getattr(self, value.name)()
         else:
