@@ -8,7 +8,7 @@ have.
 
 Suppose you have an enum, like this:
 
-```
+```python
 class Color(Enum):
     RED = 1
     GREEN = 2
@@ -30,7 +30,7 @@ Then:
 * Call it as a function passing it a value from the Enum
 * The respective method will be executed and its return value returned
 
-```
+```python
 from enum_switch import Switch
 
 class MySwitch(Switch):
