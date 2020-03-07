@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "enum_switch"
+version = "0.1.0"
+description = "An Enum-based implementation of switch for Python."
+authors = ["Roberto Alsina <roberto.alsina@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/ralsina/enum_switch"
+packages = [{ include = "enum_switch" }]
+
+[tool.poetry.dependencies]
+python = ">=3.4"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.7.9"
+black = { version = "^18.9b0", python = "^3.6" }
+pytest = { version = "", python = "^3.6" }
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
