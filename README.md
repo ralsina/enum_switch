@@ -43,7 +43,7 @@ class MySwitch(Switch):
     def BLUE(self):
         return "Sky"
 
-switch = MySwitch()
+switch = MySwitch(Color)
 
 print(switch(Color.RED))
 
